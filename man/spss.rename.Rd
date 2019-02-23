@@ -19,6 +19,6 @@ spss.rename(values, rename, output = FALSE, ext = "txt")
 Generate SPSS 'RENAME' syntax to rename a (set of) variables into another.
 }
 \examples{
-spss.rename(var1, name1)
-spss.rename(var2, name2, output = TRUE, ext = "sps")
+spss.rename(c("oldname1", "oldname2", "oldname3"), c("new1", "new2", "new3"))
+spss.rename(c("oldname1", "oldname2"), c("new1", "new2"), output = TRUE, ext = "sps")
 }
