@@ -22,6 +22,6 @@ spss.compute.max(var1, var2, output = FALSE, ext = "txt",
 Generate SPSS 'COMPUTE' syntax to compute the MAX() of two (sets of) variables.
 }
 \examples{
-spss.compute.max(var1, var2, append = "total.")
-spss.compute.max(var1, name1, output = TRUE, ext = "sps")
+spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
+spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
 }
