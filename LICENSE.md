@@ -1,7 +1,4 @@
-YEAR: 2019
-COPYRIGHT HOLDER: Alix Lahuec
-
-MIT License
+# MIT License
 
 Copyright (c) 2019 Alix Lahuec
 

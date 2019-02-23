@@ -1,0 +1,15 @@
+Package: syntaxr
+Type: Package
+Title: An SPSS Syntax Generator for Multi-Variable Manipulation
+Version: 0.1.0
+Authors@R: person("Alix", "Lahuec", email = "alix.lahuec@mail.mcgill.ca", role = c("aut", "cre"))
+URL: https://github.com/greenmeen/syntaxr
+BugReports: https://github.com/greenmeen/syntaxr/issues
+Description: A set of functions for generating SPSS syntax files from R.
+    The package is designed for bulk transformation of variables, and is
+    especially suited for large databases. It provides enhanced flexibility
+    for manipulating variables outside of SPSS.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
