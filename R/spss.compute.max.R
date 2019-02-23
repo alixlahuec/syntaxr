@@ -7,8 +7,8 @@
 #' @param append specifies the text that should be appended to the name(s) of the variable(s) in var2 to create the output variable(s).
 #' @export
 #' @examples
-#' spss.compute.max(var1, var2, append = "total.")
-#' spss.compute.max(var1, name1, output = TRUE, ext = "sps")
+#' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
+#' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
 
 spss.compute.max <- function(var1, var2, output = FALSE, ext = "txt", append = "new.") {
   output_variables <- paste0(append, var2)
