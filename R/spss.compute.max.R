@@ -10,7 +10,7 @@
 #' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
 #' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
 
-spss.compute.max <- function(var1, var2, file = FALSE, ext = "txt", append = "new.") {
+spss.compute.max <- function(var1, var2, file = FALSE, ext = "txt", append = "new.", ...) {
   created <- paste0(append, var1)
   output <- spss.format.max(var1, var2) %>%
               spss.format.compute(created, .)
