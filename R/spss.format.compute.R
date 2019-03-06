@@ -9,7 +9,7 @@
 #' spss.format.compute(c("dob", "comments"), c("MAX(dob,dob_f)", "CONCAT(comments,comments_f)"))
 
 spss.format.compute <- function(output, operation, var.format = ""){
-  formatting <- String()
+  formatting <- character()
   if(var.format != ""){
     formatting <- paste0("(", var.format, ")")
   }
