@@ -10,7 +10,7 @@
 #' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
 #' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
 
-spss.concat.new <- function(str1, str2, file = FALSE, ext = "txt", append = "enfr."){
+spss.concat.new <- function(str1, str2, file = FALSE, ext = "txt", append = "enfr.", ...){
   names <- paste0(append,str1)
   string.syntax <- names %>% spss.string(.)
   compute.syntax <- spss.compute.concat (str1, str2, names)
