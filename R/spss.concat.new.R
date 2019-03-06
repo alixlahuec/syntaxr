@@ -14,8 +14,10 @@ spss.concat.new <- function(str1, str2, file = FALSE, ext = "txt", append = "enf
   names <- paste0(append,str1)
   string.syntax <- names %>% spss.string(.)
   compute.syntax <- spss.compute.concat (str1, str2, names)
-  concat.new.syntax <- paste(string.syntax, compute.syntax)
-  writeLines(concat.new.syntax)
+  output <- paste(string.syntax, compute.syntax, sep = "\n")
+  
+  writeLines(string.syntax)
+  writeLines(compute.syntax
 
   if (file == TRUE) {
     paste0("concat_new_syntax", ".", ext) %>%
