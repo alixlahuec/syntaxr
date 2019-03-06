@@ -8,6 +8,6 @@
 #' spss.string("long.string", string.format = "A40")
 
 spss.string <- function(names, string.format = "A15"){
-  string.syntax <- paste("STRING", names, paste0("(", string.format, ")"), ".")
+  string.syntax <- paste0("STRING ", names, paste0("(", string.format, ")"), ".")
   return(string.syntax)
 }
