@@ -5,7 +5,7 @@
 \title{Generate SPSS 'COMPUTE' syntax to compute the MAX() of two (sets of) variables.}
 \usage{
 spss.compute.max(var1, var2, file = FALSE, ext = "txt",
-  append = "new.")
+  append = "new.", ...)
 }
 \arguments{
 \item{var1}{the first argument for MAX(). Used for the naming of the output variable(s).}
