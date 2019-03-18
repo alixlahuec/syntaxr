@@ -5,7 +5,7 @@
 \title{Generate SPSS 'STRING' syntax and 'COMPUTE' syntax to compute the CONCAT() of two (sets of) variables.}
 \usage{
 spss.concat.new(str1, str2, file = FALSE, ext = "txt",
-  append = "enfr.")
+  append = "enfr.", ...)
 }
 \arguments{
 \item{str1}{the first argument for CONCAT(). Used for the naming of the output variable(s).}
