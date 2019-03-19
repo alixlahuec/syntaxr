@@ -6,7 +6,7 @@ This package was designed for bulk transformation of variables, and is especiall
 **syntaxr** provides enhanced flexibility for manipulating variables outside of SPSS.
 
 ## Currently includes
-**syntaxr (v. 0.1.0)** currently provides functions for the following SPSS commands :
+**syntaxr (v. 0.5.0)** currently provides functions for the following SPSS commands :
 - COMPUTE (CONCAT()). (with STRING creation)
 - COMPUTE (MAX()).
 - RENAME VARIABLES().
