@@ -11,7 +11,7 @@
 #' spss.compute.concat("feedback", "feedback_f", "enfr.feedback", file = TRUE, ext = "sps")
 
 spss.compute.concat <- function(str1, str2, names, file = FALSE, ext = "txt"){
-  compute.syntax <- paste("COMPUTE", names, "=", "concat", paste0("(", str1, ",", str2), ").")
+  compute.syntax <- paste("COMPUTE", names, "=", "concat", paste0("(", str1, ",", str2, ")."))
 
   if (file == TRUE) {
     paste0("compute_concat_syntax", ".", ext) %>%
