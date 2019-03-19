@@ -7,6 +7,11 @@ This package was designed for bulk transformation of variables, and is especiall
 
 ## Currently includes
 **syntaxr (v. 0.1.0)** currently provides functions for the following SPSS commands :
-- RENAME VARIABLES.
-- COMPUTE (MAX()).
 - COMPUTE (CONCAT()). (with STRING creation)
+- COMPUTE (MAX()).
+- RENAME VARIABLES().
+- STRING().
+- RTRIM(). (formatting only - no saved output)
+
+## Travis CI
+[![Travis build status](https://travis-ci.org/greenmeen/syntaxr.svg?branch=master)](https://travis-ci.org/greenmeen/syntaxr)
