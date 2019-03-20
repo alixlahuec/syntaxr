@@ -1,7 +1,7 @@
 Package: syntaxr
 Type: Package
 Title: An SPSS Syntax Generator for Multi-Variable Manipulation
-Version: 0.1.0
+Version: 0.5.0
 Authors@R: person("Alix", "Lahuec", email = "alix.lahuec@mail.mcgill.ca", role = c("aut", "cre"))
 URL: https://github.com/greenmeen/syntaxr
 BugReports: https://github.com/greenmeen/syntaxr/issues
