@@ -6,6 +6,7 @@ cache: packages
 install:
   - Rscript -e 'install.packages("magrittr", repos = "http://cran.rstudio.com")'
   - Rscript -e 'install.packages("haven", repos = "http://cran.rstudio.com")'
+  - Rscript -e 'install.packages("usethis", repos = "http://cran.rstudio.com")'
 r_packages:
    - covr
 
@@ -13,4 +14,4 @@ script:
 - R CMD build .
 
 after_success:
-  - Rscript -e 'library(covr); codecov()'
+  - Rscript -e 'usethis::use_coverage()'
