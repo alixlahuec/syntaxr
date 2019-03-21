@@ -15,5 +15,5 @@ This package was designed for bulk transformation of variables, and is especiall
 
 ## Badges
 [![Travis build status](https://travis-ci.org/greenmeen/syntaxr.svg?branch=master)](https://travis-ci.org/greenmeen/syntaxr)
-[![codecov](https://codecov.io/gh/greenmeen/syntaxr/branch/master/graph/badge.svg)](https://codecov.io/gh/greenmeen/syntaxr)
+[![Coverage status](https://codecov.io/gh/greenmeen/syntaxr/branch/master/graph/badge.svg)](https://codecov.io/github/greenmeen/syntaxr?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
