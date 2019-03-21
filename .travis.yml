@@ -7,11 +7,9 @@ install:
   - Rscript -e 'install.packages("magrittr", repos = "http://cran.rstudio.com")'
   - Rscript -e 'install.packages("haven", repos = "http://cran.rstudio.com")'
   - Rscript -e 'install.packages("usethis", repos = "http://cran.rstudio.com")'
-r_packages:
-   - covr
-
+  - Rscript -e 'install.packages("devtools", repos = "http://cran.rstudio.com")'
+  - Rscript -e "devtools::install_github('jimhester/covr')"
 script:
 - R CMD build .
-
 after_success:
   - Rscript -e 'usethis::use_coverage()'
