@@ -13,3 +13,4 @@ script:
 - R CMD build .
 after_success:
   - Rscript -e 'usethis::use_coverage()'
+  - Rscript -e 'covr::codecov()'
