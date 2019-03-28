@@ -11,8 +11,8 @@
 
 spss.rename <- function(values, rename, file = FALSE, ext = "txt") {
   rename_format <- paste0("(", values, "=", rename, ")")
-  rename_command <- paste("RENAME VARIABLES ", rename_format, ".")
-  writeLines(rename_command)
+  rename_command <- paste0("RENAME VARIABLES ", rename_format, ".")
+  return(rename_command)
 
   if(file == TRUE) {
     file_name <- paste0("rename_syntax", ".", ext)
