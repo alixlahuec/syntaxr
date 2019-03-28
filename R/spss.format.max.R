@@ -8,5 +8,5 @@
 #' spss.format.max("income", "income_f")
 
 spss.format.max <- function(var1, var2){
-  paste0("MAX(", var1, ",", var2, ")")
+  return(paste0("MAX(", var1, ",", var2, ")"))
 }

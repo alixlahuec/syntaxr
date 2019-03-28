@@ -14,10 +14,11 @@ spss.compute.max <- function(var1, var2, file = FALSE, ext = "txt", append = "ne
   created <- paste0(append, var1)
   output <- spss.format.max(var1, var2) %>%
               spss.format.compute(created, .)
-   writeLines(output)
 
   if (file == TRUE) {
     paste0("compute_max_syntax", ".", ext) %>%
       writeLines(output, con = .)
   }
+
+  return(output)
 }
