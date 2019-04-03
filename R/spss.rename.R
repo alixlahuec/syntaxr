@@ -7,7 +7,7 @@
 #' @export
 #' @examples
 #' spss.rename(c("oldname1", "oldname2", "oldname3"), c("new1", "new2", "new3"))
-#' spss.rename(c("oldname1", "oldname2"), c("new1", "new2"), output = TRUE, ext = "sps")
+#' spss.rename(c("oldname1", "oldname2"), c("new1", "new2"), file = TRUE, ext = "sps")
 
 spss.rename <- function(values, rename, file = FALSE, ext = "txt") {
   rename_format <- paste0("(", values, "=", rename, ")")
