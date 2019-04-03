@@ -6,10 +6,11 @@
 #' @param ext specifies the desired extension of the output file. Defaults to "txt".
 #' @param append specifies the text that should be appended to the name(s) of the variable(s) in str1 to create the output variable(s). Defaults to an empty string.
 #' @param name specifies the name of the new String variable to be created. Defaults to an empty string ; if left unspecified, the function will use the append parameter.
+#' @importFrom magrittr "%>%"
 #' @export
 #' @examples
 #' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
-#' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
+#' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), file = TRUE, ext = "sps")
 
 spss.concat.new <- function(str1, str2, file = FALSE, ext = "txt", append = "", name = "", ...){
   if (name != ""){
@@ -25,6 +26,6 @@ spss.concat.new <- function(str1, str2, file = FALSE, ext = "txt", append = "", 
 
   if (file == TRUE) {
     paste0("concat_new_syntax", ".", ext) %>%
-      writeLines(output, con = .)
+      writeLines(concat.new.syntax, con = .)
   }
 }
