@@ -19,6 +19,8 @@ spss.concat.new(str1, str2, file = FALSE, ext = "txt", append = "",
 \item{append}{specifies the text that should be appended to the name(s) of the variable(s) in str1 to create the output variable(s). Defaults to an empty string.}
 
 \item{name}{specifies the name of the new String variable to be created. Defaults to an empty string ; if left unspecified, the function will use the append parameter.}
+
+\item{...}{any additional arguments that can be passed to functions spss.string and spss.compute.concat}
 }
 \description{
 Generate SPSS 'STRING' syntax and 'COMPUTE' syntax to compute the CONCAT() of two (sets of) variables.

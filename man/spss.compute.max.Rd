@@ -17,6 +17,8 @@ spss.compute.max(var1, var2, file = FALSE, ext = "txt",
 \item{ext}{specifies the desired extension of the output file. Defaults to "txt".}
 
 \item{append}{specifies the text that should be appended to the name(s) of the variable(s) in var1 to create the output variable(s).}
+
+\item{...}{any additional arguments that can be passed to functions spss.format.max and spss.format.compute}
 }
 \description{
 Generate SPSS 'COMPUTE' syntax to compute the MAX() of two (sets of) variables.

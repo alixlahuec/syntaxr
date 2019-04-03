@@ -6,6 +6,7 @@
 #' @param ext specifies the desired extension of the output file. Defaults to "txt".
 #' @param append specifies the text that should be appended to the name(s) of the variable(s) in str1 to create the output variable(s). Defaults to an empty string.
 #' @param name specifies the name of the new String variable to be created. Defaults to an empty string ; if left unspecified, the function will use the append parameter.
+#' @param ... any additional arguments that can be passed to functions spss.string and spss.compute.concat
 #' @importFrom magrittr "%>%"
 #' @export
 #' @examples
