@@ -5,6 +5,7 @@
 #' @param names the name(s) of the variable(s) to be created.
 #' @param file specifies if the function should output a file. Defaults to FALSE.
 #' @param ext specifies the desired extension of the output file. Defaults to "txt".
+#' @importFrom magrittr "%>%"
 #' @export
 #' @examples
 #' spss.compute.concat("feedback", "feedback_f", "enfr.feedback")

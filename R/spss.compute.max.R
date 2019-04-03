@@ -5,6 +5,7 @@
 #' @param file specifies if the function should output a file. Defaults to FALSE.
 #' @param ext specifies the desired extension of the output file. Defaults to "txt".
 #' @param append specifies the text that should be appended to the name(s) of the variable(s) in var1 to create the output variable(s).
+#' @importFrom magrittr "%>%"
 #' @export
 #' @examples
 #' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), append = "total.")

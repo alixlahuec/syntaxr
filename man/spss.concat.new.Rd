@@ -25,5 +25,5 @@ Generate SPSS 'STRING' syntax and 'COMPUTE' syntax to compute the CONCAT() of tw
 }
 \examples{
 spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
-spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
+spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), file = TRUE, ext = "sps")
 }
