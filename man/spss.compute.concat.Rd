@@ -4,7 +4,7 @@
 \alias{spss.compute.concat}
 \title{Generate SPSS 'COMPUTE' syntax to compute the CONCAT() of two (sets of) variables.}
 \usage{
-spss.compute.concat(str1, str2, names, file = FALSE, ext = "txt")
+spss.compute.concat(str1, str2, names)
 }
 \arguments{
 \item{str1}{the first argument for CONCAT().}
@@ -12,15 +12,11 @@ spss.compute.concat(str1, str2, names, file = FALSE, ext = "txt")
 \item{str2}{the second argument for CONCAT().}
 
 \item{names}{the name(s) of the variable(s) to be created.}
-
-\item{file}{specifies if the function should output a file. Defaults to FALSE.}
-
-\item{ext}{specifies the desired extension of the output file. Defaults to "txt".}
 }
 \description{
 Generate SPSS 'COMPUTE' syntax to compute the CONCAT() of two (sets of) variables.
 }
 \examples{
 spss.compute.concat("feedback", "feedback_f", "enfr.feedback")
-spss.compute.concat("feedback", "feedback_f", "enfr.feedback", file = TRUE, ext = "sps")
+spss.compute.concat("feedback", "feedback_f", "enfr.feedback")
 }

@@ -12,6 +12,7 @@ install:
   - Rscript -e "devtools::install_github('jimhester/covr')"
 script:
 - R CMD build .
+- R CMD check .
 after_success:
   - Rscript -e 'usethis::use_coverage()'
   - Rscript -e 'covr::codecov()'
