@@ -8,7 +8,7 @@
 #' @export
 #' @examples
 #' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
-#' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
+#' spss.compute.max(c("dob", "income"), c("dob_f", "income_f"))
 
 spss.compute.max <- function(var1, var2, append = "new.", ...) {
   created <- paste0(append, var1)

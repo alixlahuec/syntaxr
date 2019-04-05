@@ -4,21 +4,17 @@
 \alias{spss.rename}
 \title{Generate SPSS 'RENAME' syntax to rename a (set of) variables into another.}
 \usage{
-spss.rename(values, rename, file = FALSE, ext = "txt")
+spss.rename(values, rename)
 }
 \arguments{
 \item{values}{the variable(s) to be renamed.}
 
 \item{rename}{the name(s) to use for renaming.}
-
-\item{file}{specifies if the function should output a file. Defaults to FALSE.}
-
-\item{ext}{specifies the desired extension of the output file. Defaults to "txt".}
 }
 \description{
 Generate SPSS 'RENAME' syntax to rename a (set of) variables into another.
 }
 \examples{
 spss.rename(c("oldname1", "oldname2", "oldname3"), c("new1", "new2", "new3"))
-spss.rename(c("oldname1", "oldname2"), c("new1", "new2"), file = TRUE, ext = "sps")
+spss.rename(c("oldname1", "oldname2"), c("new1", "new2"))
 }

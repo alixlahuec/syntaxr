@@ -7,10 +7,10 @@
 #' @export
 #' @examples
 #' spss.compute.concat("feedback", "feedback_f", "enfr.feedback")
-#' spss.compute.concat("feedback", "feedback_f", "enfr.feedback", file = TRUE, ext = "sps")
+#' spss.compute.concat("feedback", "feedback_f", "enfr.feedback")
 
 spss.compute.concat <- function(str1, str2, names){
-   compute.syntax <- spss.format.concat (str1, str2) %>
+   compute.syntax <- spss.format.concat (str1, str2) %>%
       spss.format.compute(names, .)
 
    return (compute.syntax)

@@ -4,17 +4,12 @@
 \alias{spss.concat.new}
 \title{Generate SPSS 'STRING' syntax and 'COMPUTE' syntax to compute the CONCAT() of two (sets of) variables.}
 \usage{
-spss.concat.new(str1, str2, file = FALSE, ext = "txt", append = "",
-  name = "", ...)
+spss.concat.new(str1, str2, append = "", name = "", ...)
 }
 \arguments{
 \item{str1}{the first argument for CONCAT(). Used for the naming of the output variable(s).}
 
 \item{str2}{the second argument for CONCAT().}
-
-\item{file}{specifies if the function should output a file. Defaults to FALSE.}
-
-\item{ext}{specifies the desired extension of the output file. Defaults to "txt".}
 
 \item{append}{specifies the text that should be appended to the name(s) of the variable(s) in str1 to create the output variable(s). Defaults to an empty string.}
 
@@ -27,5 +22,5 @@ Generate SPSS 'STRING' syntax and 'COMPUTE' syntax to compute the CONCAT() of tw
 }
 \examples{
 spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
-spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), file = TRUE, ext = "sps")
+spss.concat.new(c("dob", "income"), c("dob_f", "income_f"))
 }

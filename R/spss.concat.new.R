@@ -9,7 +9,7 @@
 #' @export
 #' @examples
 #' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
-#' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"), file = TRUE, ext = "sps")
+#' spss.concat.new(c("dob", "income"), c("dob_f", "income_f"))
 
 spss.concat.new <- function(str1, str2, append = "", name = "", ...){
   if (name != ""){
