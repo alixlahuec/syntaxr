@@ -54,4 +54,4 @@ colnames(summary_table) <- c("Variable Name", "Variable Type")
 |------------------------:|:----------------------:|:---------------------------------------------------------------|
 |    COMPUTE _var_ = max()|`spss.compute.max()`    |                                                                |
 | COMPUTE _var_ = concat()|`spss.compute.concat()` |Assumes the new STRING already exists                           |
-|                         |`spss.compute.new()`    |Generates syntax using `spss.string()` to create a STRING first |
+|                         |`spss.concat.new()`    |Generates syntax using `spss.string()` to create a STRING first |
