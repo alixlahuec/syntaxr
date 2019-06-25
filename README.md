@@ -1,4 +1,4 @@
-# syntaxr
+# syntaxr <img src="hex_sticker.png" width = "175" height = "200" align="right" />
 An R package for generating bulk SPSS syntax from the R environment.
 
 ## Description
