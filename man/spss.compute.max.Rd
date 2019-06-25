@@ -4,24 +4,21 @@
 \alias{spss.compute.max}
 \title{Generate SPSS 'COMPUTE' syntax to compute the MAX() of two (sets of) variables.}
 \usage{
-spss.compute.max(var1, var2, file = FALSE, ext = "txt",
-  append = "new.", ...)
+spss.compute.max(var1, var2, append = "new.", ...)
 }
 \arguments{
 \item{var1}{the first argument for MAX(). Used for the naming of the output variable(s).}
 
 \item{var2}{the second argument for MAX().}
 
-\item{file}{specifies if the function should output a file. Defaults to FALSE.}
-
-\item{ext}{specifies the desired extension of the output file. Defaults to "txt".}
-
 \item{append}{specifies the text that should be appended to the name(s) of the variable(s) in var1 to create the output variable(s).}
+
+\item{...}{any additional arguments that can be passed to functions spss.format.max and spss.format.compute}
 }
 \description{
 Generate SPSS 'COMPUTE' syntax to compute the MAX() of two (sets of) variables.
 }
 \examples{
 spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), append = "total.")
-spss.compute.max(c("dob", "income"), c("dob_f", "income_f"), output = TRUE, ext = "sps")
+spss.compute.max(c("dob", "income"), c("dob_f", "income_f"))
 }
