@@ -7,6 +7,7 @@ An R package for generating bulk SPSS syntax from the R environment.
 [![CRAN Version](https://www.r-pkg.org/badges/version-ago/syntaxr?color=orange)](https://cran.r-project.org/package=syntaxr)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/syntaxr?color=blue)](https://cranlogs.r-pkg.org/badges/grand-total/syntaxr?color=blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/172167863.svg)](https://zenodo.org/badge/latestdoi/172167863)
 
 #### Description
 `syntaxr` provides overall enhanced flexibility for variable manipulation, and facilitates the streamlining of SPSS dataset transformation. This package was designed for systematic transformation of variables, and is especially suited for large datasets that don't lend themselves to easy bulk manipulation.
