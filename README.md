@@ -3,11 +3,13 @@ An R package for generating bulk SPSS syntax from the R environment.
 
 [![Travis build status](https://travis-ci.org/greenmeen/syntaxr.svg?branch=master)](https://travis-ci.org/greenmeen/syntaxr)
 [![Coverage status](https://codecov.io/gh/greenmeen/syntaxr/branch/master/graph/badge.svg)](https://codecov.io/github/greenmeen/syntaxr?branch=master)
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 [![CRAN Version](https://www.r-pkg.org/badges/version-ago/syntaxr?color=orange)](https://cran.r-project.org/package=syntaxr)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/syntaxr?color=blue)](https://cranlogs.r-pkg.org/badges/grand-total/syntaxr?color=blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/172167863.svg)](https://zenodo.org/badge/latestdoi/172167863)
+
+**Note : Due to personal events in the past year, I am no longer working on developing further releases for the package. Recent updates to dependencies might or might not lead to broken code - please use at your own risk. If you run into problems, you can create an issue here on GitHub, or get in touch with me directly. I'll try to address it as soon as possible.**
 
 #### Description
 `syntaxr` provides overall enhanced flexibility for variable manipulation, and facilitates the streamlining of SPSS dataset transformation. This package was designed for systematic transformation of variables, and is especially suited for large datasets that don't lend themselves to easy bulk manipulation.
